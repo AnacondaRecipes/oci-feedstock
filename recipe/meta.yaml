@@ -18,7 +18,6 @@ requirements:
     - python
     - pip
     - setuptools
-    - wheel
   run:
     - python
     - certifi
@@ -29,6 +28,12 @@ requirements:
     - urllib3 >=2.6.3
     - circuitbreaker >=1.3.1,<3.0.0
     - crc32c ==2.7.1
+  run_constrained:
+    # `adk` extra (Agent Development Kit)
+    - docstring_parser >=0.16
+    - pydantic >=2.10.6
+    - rich >=13.9.4
+    - mcp >=1.6.0
 
 test:
   imports:
